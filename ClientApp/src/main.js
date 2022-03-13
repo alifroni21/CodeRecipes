@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify'
+import store from './store'
 import Vue from 'vue'
 import moment from 'moment'
 
@@ -24,5 +25,6 @@ Vue.filter("formatDate", function (value) {
 new Vue({
     vuetify,
     router,
+    store,
     render: h => h(App)
 }).$mount('#app');
